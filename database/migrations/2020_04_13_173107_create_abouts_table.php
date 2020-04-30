@@ -22,9 +22,9 @@ class CreateAboutsTable extends Migration
             $table->string("email")->default("example@gmail.com");
             $table->string("profile_img")->default("default.jpg");
 
-            $table->string("inst")->default("https://www.instagram.com/amirovaulyana/");
-            $table->string("vk")->default("https://vk.com/take_me_to_churchh");
-            $table->string("litnet")->default("https://litnet.com/ru/ulyanaamirova-u3210800");
+            $table->string("inst")->default("https://www.instagram.com/");
+            $table->string("vk")->default("https://vk.com/");
+            $table->string("litnet")->default("https://litnet.com/");
 
 
             
