@@ -1,0 +1,71 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+//card image style
+
+.card-img-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  .card-img-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: opacity .25s;
+  }
+  .card-img-wrap img {
+    transition: transform .25s;
+    width: 100%;
+  }
+  .card-img-wrap:hover img {
+    transform: scale(1.5);
+  }
+  .card-img-wrap:hover:after {
+    opacity: 1;
+  }
+
+  .card-p-3 {
+    padding: $spacer !important;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .blog-img-wrap {
+    position: relative;
+  }
+  .blog-img-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    opacity: 0;
+    transition: opacity .25s;
+  }
+  .blog-img-wrap img {
+    transition: transform .25s;
+    width: 100%;
+  }
+  .blog-img-wrap:hover img {
+    transform: scale(2);
+  }
+  .blog-img-wrap:hover:after {
+    opacity: 1;
+  }
+  
+  p{
+
+    white-space: pre-wrap;
+  }
+ 
+ 
